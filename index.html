@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/ccis.png">
+    <link rel="icon" type="image/jpg" href="image/logo.jpg">
     <title> Campus Event Showcase and Registration</title>
    
 </head>
@@ -221,7 +221,7 @@
 
             <section class="main-section">
 
-                <article id="layout" class="card">
+                <article id="Overview" class="card">
                     <h2>1. Event Overview</h2>
 
                     <div class="info-box">
@@ -233,66 +233,79 @@
                         </p>
 
                             
-                    </div>
-
-                    <button class="primary-btn" onclick="toggleMessage()">Toggle Info Message</button>
-
-                    <p id="info-message" class="hidden-message">
-                        JavaScript is working! &#127881; You just toggled this message using a button.
-                    </p>
+                    <img src="EVENT.jpg" alt="Banner" style="max-width: 700px; max-height: 700px;"> 
                 </article>
 
-                <article class="card">
+                <article id="Schedule" class="card">
                     <h2>2. Event Schedule ✓</h2>
                     <p>Here is the simplified schedule of activities</p>
+                    <ul>
+                        <li><b>Day 1 -</b>Opening Program and Keynote Talks </li>
+                        <li><b>Day 2 -</b>Coding Hackathon</li>
+                        <li><b>Day 3 -</b>Robotics and IoT Exhibition</li>
+                        <li><b>Day 4 -</b> Cybersecurity Awareness Session  </li>
+                        <li><b>Day 5 -</b> Project Showcase and Awarding Ceremony </li>
+                    </ul>
 
-                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
-                        <iframe
-                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-                            src="https://www.youtube.com/embed/qz0aGYrrlhU?si=l3TdMHTcJTKbjxBc"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                
                 </article>
 
-                <article class="card">
-                    <h2>3. File Paths and Relative Image</h2>
-                    <p>
-                        The image below is loaded from a <em>relative file path</em>:
-                        <code>images/profile.jpg</code>.
-                    </p>
-
-                    <img
-                        src="images/mark.jpg"
-                        alt="Sample profile photo"
-                        style="max-width: 160px; border-radius: 10%; border: 3px solid #004b8d;">
+                <article id="Location" class="card">
+                    <h2>3. Event Location and Map</h2>
+                    <p>All events will be held at the <b>SMCC Main Campos - IT Building<b>. Use the embedded map below to find the location easily.</p>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.824764586886!2d125.33782747479333!3d8.988267091071448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1782975901120!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                
                 </article>
 
-                <article id="forms" class="card">
-                    <h2>4. HTML Forms</h2>
+                <article id="Registration" class="card">
+                    <h2>4. Event Registration Forms</h2>
 
-                    <p>
-                        HTML forms allow users to submit information such as event registrations,
-                        login credentials, surveys, and feedback. HTML5 also provides built-in
-                        validation features that help ensure correct user input.
+                    <p>Please complete the form below to register for SMCC-CCIS Week 2026.
                     </p>
 
-                    <form id="event-form" onsubmit="registerStudent(event)">
+                    <form id="Registration" onsubmit="registerStudent(event)">
+                        <form id="registration-form">
+                           <label for="fullname">Full Name:</label>
+                              <input 
+                              type="text" 
+                              id="fullname" 
+                              name="fullname" 
+                              placeholder="Enter your full name"
+                              required minlength="3">
+                           <label for="email">Email Address:</label>
+                              <input  
+                              type="email" 
+                              id="email" 
+                              placeholder="example@gmail.com"
+                              name="email" required>
+                               
+                           <label for="student-id Number">Student ID:</label>
+                              <input 
+                              type="text" 
+                              id="student-id" 
+                              name="student-id" 
+                              placeholder="20250095"
+                              required pattern="[0-9]{6,12}">
+                           <label for="Contact Number">Contact Number:</label>
+                              <input
+                              type="text"
+                              id="contact number"
+                              placeholder="09518144462"
+                              required pattern="[0-9]{6,12}">
 
-                        <div class="form-row">
-                            <div>
-                                <label for="fullname">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="fullname"
-                                    name="fullname"
-                                    placeholder="Enter your full name"
-                                    required
-                                    minlength="5">
+                           <label for="year-level">Year Level:</label>
+                              <select 
+                              id="year-level" 
+                              name="year-level" required>
+                           <option value="">Select Year Level</option>
+                           <option value="1st Year">1st Year</option>
+                           <option value="2nd Year">1st Year</option>
+                           <option value="3rd Year">1st Year</option>
+                           <option value="4th Year">1st Year</option>
+
+
+
+                        <
                             </div>
 
                             <div>
