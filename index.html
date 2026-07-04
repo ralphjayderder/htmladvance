@@ -305,109 +305,9 @@
                               name="year-level" required>
                            <option value="">Select Year Level</option>
                            <option value="1st Year">1st Year</option>
-                           <option value="2nd Year">1st Year</option>
-                           <option value="3rd Year">1st Year</option>
-                           <option value="4th Year">1st Year</option>
-
-
-
-                        <
-                            </div>
-
-                            <div>
-                                <label for="email">Email Address</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="example@gmail.com"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div>
-                                <label for="studentid">Student ID</label>
-                                <input
-                                    type="text"
-                                    id="studentid"
-                                    name="studentid"
-                                    placeholder="202600123"
-                                    required
-                                    pattern="[0-9]{9}"
-                                    title="Student ID should contain exactly 9 digits.">
-                            </div>
-
-                            <div>
-                                <label for="course">Course</label>
-                                <select id="course" name="course" required>
-                                    <option value="">Select Course</option>
-                                    <option value="BS Information Systems">BS Information Systems</option>
-                                    <option value="BS Computer Science">BS Computer Science</option>
-                                    <option value="BS Information Technology">BS Information Technology</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div>
-                                <label for="birthdate">Birthdate</label>
-                                <input
-                                    type="date"
-                                    id="birthdate"
-                                    name="birthdate"
-                                    required>
-                            </div>
-
-                            <div>
-                                <label for="arrival">Arrival Time</label>
-                                <input
-                                    type="time"
-                                    id="arrival"
-                                    name="arrival"
-                                    required>
-                            </div>
-                        </div>
-                        <label>Participant Type</label>
-                        <div class="radio-group">
-                            <label>
-                                <input type="radio" name="participant_type" value="Student" required>
-                                Student
-                            </label>
-
-                            <label>
-                                <input type="radio" name="participant_type" value="Faculty">
-                                Faculty
-                            </label>
-
-                            <label>
-                                <input type="radio" name="participant_type" value="Guest">
-                                Guest
-                            </label>
-                        </div>
-
-                        <label>Activities to Join</label>
-                        <div class="checkbox-group">
-                            <label>
-                                <input type="checkbox" name="activity" value="Coding Contest">
-                                Coding Contest
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="activity" value="Web Design">
-                                Web Design
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="activity" value="Robotics">
-                                Robotics
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="activity" value="Quiz Bowl">
-                                Quiz Bowl
-                            </label>
-                        </div>
+                           <option value="2nd Year">2nd Year</option>
+                           <option value="3rd Year">3rd Year</option>
+                           <option value="4th Year">4th Year</option>
 
                         <label for="schoolid">Upload School ID</label>
                         <input
@@ -435,92 +335,103 @@
                         </div>
 
                         <p id="form-result" class="success"></p>
+<div class="form-row">
 
+                        
+                        <label>Participant Type</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="participant_type" value="Student" required> Student</label>
+                            <label><input type="radio" name="participant_type" value="Faculty"> Faculty</label>
+                            <label><input type="radio" name="participant_type" value="Guest"> Guest</label>
+                        </div>
+
+                        <label>Activities to Join</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="activity" value="Coding Contest"> Coding Contest</label>
+                            <label><input type="checkbox" name="activity" value="Web Design"> Web Design</label>
+                            <label><input type="checkbox" name="activity" value="Robotics"> Robotics</label>
+                            <label><input type="checkbox" name="activity" value="Quiz Bowl"> Quiz Bowl</label>
+                        </div>
+
+                        
+                        <div>
+                            <label for="schoolid">Upload School ID</label>
+                            <input type="file" id="schoolid" name="schoolid" accept=".jpg,.jpeg,.png,.pdf">
+                        </div>
+
+                        <div>
+                            <label for="comments">Comments</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Write your comments..." maxlength="300"></textarea>
+                        </div>
+
+                        
+                        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                            <button class="primary-btn" type="submit">Submit Registration</button>
+                            <button class="reset-btn" type="reset">Reset Form</button>
+                        </div>
+
+                        <p id="form-result" class="success"></p>
+                    </form>
+                </article>
                     </form>
                 </article>
 
-                <article id="code" class="card">
-                    <h2>5. Computer Code Tags</h2>
-                    <p>We can show code and computer-related text using special tags:</p>
-
-                    <div class="code-block">
-<pre><code>&lt;pre&gt; and &lt;code&gt; show preformatted code:
-
-function hello() {
-    console.log("Hello, world!");
-}
-</code></pre>
-                    </div>
-
-                    <p>
-                        Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your file.
-                        Program output example using <code>&lt;samp&gt;</code>:
-                        <samp>Build successful. No errors found.</samp>
-                    </p>
-                </article>
+                <article id="code-tags" class="card">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Use the button below to interact with the page</p>
+                    <button class="primary-btn" onclick="toggleFAQ()">Toggle FAQ Visibility</button>
+                    <p>1.<b>is the event open to all students?</b></p>
+                    <p> Yes, the event is open to alldepartments and year levels.</p>
+                    <p>2.<b> I need to register?</b></p>
+                    <p> Yes, you need to fill out the registration form and submit it.</p>
+                    <p>3.<b> What is the deadline for registration?</b></p>
+                    <p> The deadline for registration is one week before the event date.</p>
+                <p>No, all SMCC-CCIS Week 2026 activities are free of charge</p>
 
                 <article id="symbols" class="card">
-                    <h2>6. Entities, Symbols, Emojis & URL Encoding</h2>
+                    <h2>Tech Demo & Developer Notes</h2>
+                    <p>Sample Command Using <'pre'> and <'code'></p>
+                    <pre style="color: rgb(236, 236, 236); background-color: #2d2d2d; padding: 15px; border-radius: 5px;">
+// Clone the SMCC-CCIS Week repository
+git clone https://github.com/example/ccisweek2026.git
 
-                    <p>
-                        HTML <strong>entities</strong> and <strong>symbols</strong>:
-                        &copy; 2026 InfoHub &mdash; All rights reserved.
-                        Heart symbol: &hearts;
-                        Check symbol: &#10003; (✓)
-                    </p>
+// Install dependencies
+npm install
 
-                    <p>
-                        Emojis add expression: &#128516;&#128640;&#127793;
-                    </p>
+// Start development server
+npm run dev
+</pre>
+<p>To save your changes, press <b>Ctrl + S</b> Example system output using <-samp> <samp>: Build successful. No
+errors found.</p>
+                    <h2>Registration URL Example</h2>
+                    <p>Example registration URL with encoded spaces and symbols:</p>
+                    <pre style="color: rgb(236, 236, 236); background-color: #2d2d2d; padding: 15px; border-radius: 5px;">
+https://myschool.edu/events/register?event-SMCC%20CCIS%20Week%202026&section-A
+</pre>
+<p>Here, <b>%20</b> represents a space character in the URL.</p>
+                    <h2>HTML vs XHTML Example</h2>
+                    <p>Compare the following snippets</p>
+                    <pre style="color: rgb(236, 236, 236); background-color: #2d2d2d; padding: 15px; border-radius: 5px;"> <pre><code>
+&lt;!-- HTML style --&gt;
+&lt;br&gt;
+&lt;img src="images/logo.png" alt="Event Logo"&gt;
 
-                    <p>
-                        Example of a URL-encoded search query:
-                    </p>
-
-                    <div class="code-block">
-                        <code>https://example.com/search?query=HTML%20Advanced%20Topics%21</code>
-                    </div>
-                </article>
-
-                <article id="xhtml" class="card">
-                    <h2>7. HTML vs XHTML</h2>
-
-                    <p>Below is a simple comparison of HTML and XHTML syntax:</p>
-
-                    <div class="code-block">
-<pre><code>&lt;!-- HTML version not self-closed --&gt;
-&lt;img src="images/profile.jpg" alt="Profile image"&gt;
-
-&lt;!-- XHTML-style version self-closed, lowercase, quoted attributes --&gt;
-&lt;img src="images/profile.jpg" alt="Profile image" /&gt;
+&lt;!-- XHTML style --&gt;
+&lt;br /&gt;
+&lt;img src="images/logo.png" alt="Event Logo" /&gt;
 </code></pre>
-                    </div>
-
-                    <p>
-                        XHTML is stricter and requires properly closed tags, lowercase names, and quoted attributes.
-                    </p>
-                </article>
-
-            </section>
-
+</pre>              
+<p>XHTML requires properly closed tags, lowercase element names, and quoted attributes.</p>    
             <aside class="sidebar">
-                <h3>Quick Info Panel</h3>
-
-                <p>
-                    This <code>&lt;aside&gt;</code> acts as a sidebar. It demonstrates
-                    how semantic tags improve layout and meaning.
-                </p>
-
-                <p>
-                    This page follows a simple <strong>style guide</strong>:
-                    lowercase tag names, consistent indentation, semantic elements,
-                    meaningful class and ID names, and UTF-8 charset.
-                </p>
-
-                <p>
-                    Character encoding is defined using:
-                </p>
-
+                <h3>Event info & Contact</h3>
+                <p>SMCC-CCIS Week 2026 is organized by the College of Computing and Information Sciences</p>
+                <p>For inquiries, email: <b>ccis week @myschool.edu</b></p>
+                <p><b>Event Highlights:</b></p>
+                <ul>
+                    <li>Live coding sessions</li>
+                    <li>Industry speakers</li>
+                    <li>Project exhibits</li>
+                </ul>
                 <div class="code-block">
                     <code>&lt;meta charset="UTF-8"&gt;</code>
                 </div>
@@ -529,12 +440,9 @@ function hello() {
         </div>
 
         <footer>
-            <p>
-                Built with advanced HTML Concepts &middot; InfoHub Sample &nbsp;&starf; &nbsp; &copy; 2026
-            </p>
+            <p>SMCC-CCIS Week 2026-Campus Event Showcase | Made with HTML, CSS & JavaScript &#10004; </p>
         </footer>
 
-
-    
+    </div>
 </body>
 </html>
