@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="image/logo.jpg">
-    <title> Campus Event Showcase and Registration</title>
-   
-</head>
-<style>
-    body {
+    <title>SMCC CCIS WEEK</title>
+    <link rel="icon" type="image/png" href="image/logo.jpg">
+
+    <style>
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f5f7fb;
@@ -23,11 +22,13 @@
 
         header, nav, section, article, aside, footer {
             padding: 15px 20px;
+            
         }
 
         header {
-            background-color: #04aa28;
+            background-color: #03701a;
             color: #fff;
+            text-align: center;
         }
 
         nav {
@@ -37,7 +38,7 @@
         nav a {
             margin-right: 15px;
             text-decoration: none;
-            color: #039b29;
+            color: #004b8d;
             font-weight: bold;
         }
 
@@ -50,6 +51,7 @@
 
         .main-section {
             flex: 3 1 250px;
+            
         }
 
         .sidebar {
@@ -65,7 +67,7 @@
             border-radius: 8px;
             padding: 15px 20px;
             box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            margin-bottom: 0 auto;
         }
 
         .code-block {
@@ -77,7 +79,7 @@
         }
 
         button.primary-btn {
-            background-color: #004b8d;
+            background-color: #00f339;
             color: #ffffff;
             border: none;
             padding: 8px 14px;
@@ -138,7 +140,7 @@
         select:focus,
         textarea:focus {
             outline: none;
-            border-color: #004b8d;
+            border-color: #048a21;
         }
 
         .form-row {
@@ -160,7 +162,7 @@
         }
 
         .success {
-            color: green;
+            color: rgb(7, 190, 62);
             font-weight: bold;
         }
 
@@ -178,9 +180,9 @@
                 grid-template-columns: 1fr;
             }
         }
-</style>
+    </style>
 
-<script>
+    <script>
         function toggleMessage() {
             const msg = document.getElementById("info-message");
 
@@ -202,43 +204,48 @@
             document.getElementById("event-form").reset();
         }
     </script>
+</head>
+
 <body id="page-root">
     <div class="wrapper">
+
         <header id="top-header" class="section-header">
-            <h1 style="text-align: center;">SMCC-CCIS Week 2025 – Campus Event Showcase</h1>
-            <p style="text-align: center;">“Celebrating innovation, technology, and collaboration across the campus.”</p>
+            <h1>SMCC-CCIS Week 2026 - Campus Event Showcase &#127891;  &#127881; </h1>
+            <p>Celebration innnovation, technology, and collaboration across the campus</p>
         </header>
 
         <nav>
-            <a href="#Overview">Overview</a>
-            <a href="#Schedule">Schedule</a>
-            <a href="#Location">Location</a>
-            <a href="#Registration">Registration</a>
-            <a href="#FAQ">FAQ</a>
-            <a href="#Tech Demo ">Tech Demo </a>
+            <a href="#overview">Overview</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#location">Location</a>
+            <a href="#registration">Registration</a>
+            <a href="#code-tags"> FAQ </a>
+            <a href="#symbols">Tech Demo</a>
         </nav>
+
         <div class="container">
 
             <section class="main-section">
 
-                <article id="Overview" class="card">
-                    <h2>1. Event Overview</h2>
+                <article id="overview" class="card">
+                    <h2>Event Overview &#9733; </h2>
+                    <p>
+                        <b>SMCC-CCIS Week 2026 </b>is an annual campus event that highlights student projects, programming skills,
+innovation, cybersecurity awareness, and collaboration among future IT professionals.
+Join us for a week of learning, networking, and fun & excitement as we celebrate technology in
+education. ✓
+COURSES OFFERED computing
+                    </p>
 
-                    <div class="info-box">
-                        <p>SMCC-CCIS Week 2026 is an annual campus event that highlights student projects, programming skills,
-                        innovation, cybersecurity awareness, and collaboration among future IT professionals.
-                        </p>
+                    <img src="EVENT.jpg" alt="banner" style="width:100%; border-radius:5px; margin-top:10px;">
 
-                        <p>Join us for a week of learning, networking, and fun & excitement as we celebrate technology in education. ✓
-                        </p>
-
-                            
-                    <img src="EVENT.jpg" alt="Banner" style="max-width: 700px; max-height: 700px;"> 
                 </article>
 
-                <article id="Schedule" class="card">
-                    <h2>2. Event Schedule ✓</h2>
-                    <p>Here is the simplified schedule of activities</p>
+                <article id="schedule" class="card">
+                    <h2>Event Schedule  &#10004;</h2>
+                    <p>
+                       Here is the simplified schedule of acvitivities
+                    </p>
                     <ul>
                         <li><b>Day 1 -</b>Opening Program and Keynote Talks </li>
                         <li><b>Day 2 -</b>Coding Hackathon</li>
@@ -246,96 +253,79 @@
                         <li><b>Day 4 -</b> Cybersecurity Awareness Session  </li>
                         <li><b>Day 5 -</b> Project Showcase and Awarding Ceremony </li>
                     </ul>
+                    <article id="location" class="card">
+                    <h2>Event Location & Map</h2>
+                    <p>The event will be held in the <b>SMCC Main</b> auditorium on campus.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2343.2281715321637!2d125.34030902128522!3d8.988306198370351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1783002557137!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </article>
+
 
                 
                 </article>
 
-                <article id="Location" class="card">
-                    <h2>3. Event Location and Map</h2>
-                    <p>All events will be held at the <b>SMCC Main Campos - IT Building<b>. Use the embedded map below to find the location easily.</p>
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.824764586886!2d125.33782747479333!3d8.988267091071448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1782975901120!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                
-                </article>
+                <article id="registration" class="card">
+                    <h2>4. Event Registration Form &#128221; </h2>
 
-                <article id="Registration" class="card">
-                    <h2>4. Event Registration Forms</h2>
-
-                    <p>Please complete the form below to register for SMCC-CCIS Week 2026.
+                    <p>
+                        Event Registration Form Please complete the form below to register for SMCC-CCIS Week 2026.
                     </p>
 
-                    <form id="Registration" onsubmit="registerStudent(event)">
-                        <form id="registration-form">
-                           <label for="fullname">Full Name:</label>
-                              <input 
-                              type="text" 
-                              id="fullname" 
-                              name="fullname" 
-                              placeholder="Enter your full name"
-                              required minlength="3">
-                           <label for="email">Email Address:</label>
-                              <input  
-                              type="email" 
-                              id="email" 
-                              placeholder="example@gmail.com"
-                              name="email" required>
-                               
-                           <label for="student-id Number">Student ID:</label>
-                              <input 
-                              type="text" 
-                              id="student-id" 
-                              name="student-id" 
-                              placeholder="20250095"
-                              required pattern="[0-9]{6,12}">
-                           <label for="Contact Number">Contact Number:</label>
-                              <input
-                              type="text"
-                              id="contact number"
-                              placeholder="09518144462"
-                              required pattern="[0-9]{6,12}">
-                             <label for="birthdate">Birthdate</label>
-                                <input
-                                    type="date"
-                                    id="birthdate"
-                                    name="birthdate"
-                                    required>
+                    
+                <article id="registration" class="card">
+                    <h2>Event Registration Form</h2>
+                    <p>Please complete the form below to register for SMCC-CCIS Week 2026.</p>
 
-                           <label for="year-level">Year Level:</label>
-                              <select 
-                              id="year-level" 
-                              name="year-level" required>
-                           <option value="">Select Year Level</option>
-                           <option value="1st Year">1st Year</option>
-                           <option value="2nd Year">2nd Year</option>
-                           <option value="3rd Year">3rd Year</option>
-                           <option value="4th Year">4th Year</option>
-
-                        <label for="schoolid">Upload School ID</label>
-                        <input
-                            type="file"
-                            id="schoolid"
-                            name="schoolid"
-                            accept=".jpg,.jpeg,.png,.pdf">
-
-                        <label for="comments">Comments</label>
-                        <textarea
-                            id="comments"
-                            name="comments"
-                            rows="4"
-                            placeholder="Write your comments..."
-                            maxlength="300"></textarea>
-
-                        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-                            <button class="primary-btn" type="submit">
-                                Submit Registration
-                            </button>
-
-                            <button class="reset-btn" type="reset">
-                                Reset Form
-                            </button>
+                    <form id="event-form" onsubmit="registerStudent(event)">
+                        
+                      
+                        <div class="form-row">
+                            <div>
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="5">
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                            </div>
                         </div>
 
-                        <p id="form-result" class="success"></p>
-<div class="form-row">
+                       
+                        <div class="form-row">
+                            <div>
+                                <label for="studentid">Student ID</label>
+                                <input type="text" id="studentid" name="studentid" placeholder="202600123" required pattern="[0-9]{9}" title="Student ID should contain exactly 9 digits.">
+                            </div>
+                            <div>
+                                <label for="contact-number">Contact Number</label>
+                                <input type="text" id="contact-number" name="contact-number" placeholder="Enter your contact number" required minlength="10" maxlength="15">
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-row">
+                            <div>
+                                <label for="birthdate">Birthdate</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+                            <div>
+                                <label for="arrival">Preferred Arrival Time:</label>
+                                <input type="time" id="arrival" name="arrival" required>
+                            </div>
+                        </div>
+
+                        <
+                        <div class="form-row">
+                            <div>
+                                <label for="Year Level">Year Level</label>
+                                <select id="year-level" name="year-level" required>
+                                    <option value="">Select Year Level</option>
+                                    <option value="First Year">First Year</option>
+                                    <option value="Second Year">Second Year</option>
+                                    <option value="Third Year">Third Year</option>
+                                    <option value="Fourth Year">Fourth Year</option>
+                                </select>
+                            </div>
+                        </div>
 
                         
                         <label>Participant Type</label>
@@ -373,9 +363,8 @@
                         <p id="form-result" class="success"></p>
                     </form>
                 </article>
-                    </form>
-                </article>
 
+                
                 <article id="code-tags" class="card">
                     <h2>Frequently Asked Questions</h2>
                     <p>Use the button below to interact with the page</p>
